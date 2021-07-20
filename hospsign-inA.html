@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital Sign-in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="commonstyle.css">
+  
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color:#A6ACAF;
+
+    }
+    
+    
+    /* Add padding to containers */
+    .container {
+      border-radius: 5px;
+      background-color:#f2f2f2;
+      padding: 20px;
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] ,input[type=number]{
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+
+      background: #f2f2f2;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus ,input[type=number]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color:#1A5276;
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 4px;
+    }
+    
+    .registerbtn:hover {
+
+      background-color: grey;
+
+      opacity: 1;
+    }
+    
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+    
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    </style>
+    </head>
+    <body>
+    <div class="header">
+     <img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"style="float:left; width:170px;height:170px;margin-right:100px;margin-left:175px">
+    <h1>COVID WARRIORS</h1>
+    <p> TILL WE WIN INDIA'S FIGHT AGAINST COVID-19 PANDEMIC</p>
+    </div>
+
+    <div class="navbar">
+     <a href="home.html">Home</a>
+     <a href="hospregis.html" class="active">Hospital Login</a>
+     <a href="vol.html">Volunteer</a>
+     <a href="user.html">User</a>
+     <a href="#footerid" class="right">Contact us</a>
+     <a href="feedback.html" class="right">Feedback</a>
+   </div>
+    
+    <form action="hospsign-inA.php" method="post">
+        <h1 style="text-align: center; color:  #1A5276;  text-decoration: bolder"><i>SIGN-IN</i></h1>
+        <p style="text-align: center">Please fill in this form to collaborate with COVID WARRIORS.</p>
+         <div class="container">
+    
+        <label for="hid"><b>Hospital ID</b></label>
+        <input type="text" placeholder="Enter ID" name="hid" id="hid" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+
+        <hr>
+        <p>By Signing-in you agree to our <a href="#">Terms & Privacy</a>.</p>
+    
+        <button type="submit" class="registerbtn" >Sign-in</button>
+      </div>
+      
+    </form>
+
+    <div class="footer" id="footerid"><img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"style="float:left; width:100px;height:100px;margin-right:10px;margin-left:10px"><p style="text-decoration: underline;">CONTACT US</p><p>
+      <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bangalore,INDIA &nbsp&nbsp
+      <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91-9468425678 &nbsp&nbsp
+      <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:covidwarriors@gmail.com</p>
+    </div>
+
+    
+    </body>
+    </html>

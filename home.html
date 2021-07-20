@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Covid Warriors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="commonstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:auto;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color:#A6ACAF;
+}
+
+
+.text{ color:#1A5276; margin:40px;font-family: "Abhaya Libre",  serif; font-size: 22px;font-weight:500;  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width:50%;
+  
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"style="float:left; width:170px;height:170px;margin-right:100px;margin-left:175px">
+  <h1>COVID WARRIORS</h1>
+  <p> TILL WE WIN INDIA'S FIGHT AGAINST COVID-19 PANDEMIC</p>
+</div>
+
+   <div class="navbar">
+     <a href="home.html" class="active" >Home</a>
+     <a href="hospregis.html">Hospital Login</a>
+     <a href="vol.html">Volunteer</a>
+     <a href="user.html">User</a>
+     <a href="#footerid" class="right">Contact us</a>
+     <a href="feedback.html" class="right">Feedback</a>
+    
+   </div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Webp.net-resizeimage (6).jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="remdesivir-image.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Webp.net-resizeimage (1).png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><br>
+  <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <img src="covid prevention.png" style="height:450px">  </div>
+  <div class="column" style="background-color:#bbb;">
+   <img src="post covid care.png" style="height:450px;width:100%">
+  </div>
+  
+</div>
+
+ 
+<h2 style=" background:#F7882F;text-align: center;">Protocol for Positive cases Exposure</h2>
+<img src="imageforpositive.jpg" style="width:100%"><h2>For more information visit <a href="https://www.who.int/">World Health Organization</a>
+<h2 style="text-decoration:underline;font-size:50px;color:white" class="text">ABOUT US</h2>
+<p class="text">This website, called COVID WARRIORS, will provide verified information on the availability of oxygen cylinders and Remdesivir.
+The second wave of COVID-19 has hit the entire nation quite strongly. One of the consequences of the ongoing pandemic is the unavailability of verified information. While various information is being floated on the social media platforms but the information lacks authenticity.</p>
+ <p class="text">A person gets to access the verified information on the status of availability of different supply items such as oxygen cylinders and Remdesivir according to users input such as location and quantity needed.<br>
+ Hospitals support  by registering and giving information of the stock they have of oxygen cylinders and Remdesivir.</p>
+<p class="text">Users must understand that the data provided on the website is collected and verified by volunteers to the best of their ability. However, users have been requested to reverify and confirm the identity of any vendor or service provider that they find through the website.</p>
+
+<div class="footer" id="footerid"><img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"style="float:left; width:100px;height:100px;margin-right:10px;margin-left:10px"><p style="text-decoration: underline;">CONTACT US</p><p> 
+      <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bangalore,INDIA &nbsp&nbsp
+      <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91-9468425678 &nbsp&nbsp
+      <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:covidwarriors@gmail.com</p>
+
+</div>
+
+</body>
+</html>

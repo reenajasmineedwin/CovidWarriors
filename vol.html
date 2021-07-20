@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Volunteer Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="commonstyle.css">
+
+<style>
+body {
+    background-color:#A6ACAF ;
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+</style>
+<body>
+<div class="header">
+        <img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"style="float:left; width:170px;height:170px;margin-right:100px;margin-left:175px">
+        <h1>COVID WARRIORS</h1>
+        <p> TILL WE WIN INDIA'S FIGHT AGAINST COVID-19 PANDEMIC</p>
+</div>
+
+<div class="navbar">
+    <a href="home.html" >Home</a>
+    <a href="hospregis.html">Hospital Login</a>
+    <a href="vol.html"  class="active">Volunteer</a>
+    <a href="user.html">User</a>
+    <a href="#footerid" class="right">Contact us</a>
+    <a href="feedback.html" class="right ">Feedback</a>
+</div>
+<h1 style="text-align: center; color:  #1A5276;"><i>VOLUNTEER REGISTRATION</i></h1>
+
+<div class="container">
+    
+  <form action="vol.php" method="post">
+    <label for="vname"><b>Name</b></label>
+    <input type="text" id="vname" name="vname" placeholder="Your name.." required>
+
+
+    <label for="age"><b>Age</b></label>
+    <input type="text" id="age" name="age" placeholder="Your Age.." required>
+  
+    
+    <br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" id="email" name="email" placeholder="Your mail id.." required><br>
+    
+    <label for="number"><b>Phone Number</b></label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number.." required><br>
+     <label for="aadhar"><b>Aadhar No</b></label>
+    <input type="text" id="aadhar" name="aadhar" placeholder="Aadhar number.." required><br>
+    <label for="city"><b>City</b></label>
+    <input type="text" id="city" name="city" placeholder="Your city.." required><br>
+    
+
+    <br>
+
+    <h3>Please indicate areas to volunteer according to your convinience:</h3>
+    
+    <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Blood Donation">
+        <span class="checkmark" ></span>Blood Donation
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Healthcare System">
+        <span class="checkmark"></span>Healthcare System
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Humane Services">
+        <span class="checkmark"></span>Humane Services
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Society Services">
+        <span class="checkmark"></span>Society Services
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Environmental Services">
+        <span class="checkmark"></span>Environmental Services
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Donation Services">
+        <span class="checkmark"></span>Donation Services
+      </label>
+      <br><br>
+      <label class="container" style="font-size: 20px;">
+        <input type="checkbox" name="v[]" value="Other Services">
+        <span class="checkmark"></span>Other Services
+      </label><br><br>
+      <br>
+      
+    <input type="submit" value="Submit">
+     <p style="text-align: center">Withdraw as a volunteer? <a href="voldelete.html">Click here</a>.</p>
+  </form>
+</div>
+<div class="footer" id="footerid"><img src="Screenshot_2021-05-23_at_5.32.03_PM-removebg-preview.png"
+  style="float:left; width:100px;height:100px;margin-right:10px;margin-left:10px"><p style="text-decoration: underline;">CONTACT US</p><p>
+    <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Bangalore,INDIA &nbsp&nbsp
+    <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91-9468425678 &nbsp&nbsp
+    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:covidwarriors@gmail.com</p>
+</div>
+</body>
+</html>
